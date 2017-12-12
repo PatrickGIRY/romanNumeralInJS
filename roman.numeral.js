@@ -1,11 +1,22 @@
 'use strict'
 
 const numberToRomanNumeral = n => {
-    if (n === 4) return 'IV'
-    if (n === 5) return 'V'
-    if (n === 6) return 'VI'
-    return 'I'.repeat(n)
+    let result = ""
+    for (let numeral of numerals) {
+        while(n >= numeral.value) {
+          result += numeral.roman
+          n -= numeral.value
+        }
+    }
+    return result
 }
+
+const numerals = [
+    {value: 5, roman: 'V'},
+    {value: 4, roman: 'IV'},
+    {value: 1, roman: 'I'}
+]
+
 
 module.exports = numberToRomanNumeral
 
