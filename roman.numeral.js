@@ -2,11 +2,10 @@
 
 const numberToRomanNumeral = n => {
    const nextState = ({result, n}, numeral) => {
-       while(n >= numeral.value) {
-          result += numeral.roman
-          n -= numeral.value
-        }
-        return {result, n}
+       if(n >= numeral.value) {
+          return nextState({result: result + numeral.roman, n: n - numeral.value}, numeral)
+       }
+       return {result, n}
     }
 
    return numerals.reduce(nextState, {result: "", n}).result
