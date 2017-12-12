@@ -22,6 +22,10 @@ describe('numberToRomanNumeral', () => {
     it('5 should be convert to V', () => {
         expect(numberToRomanNumeral(5)).toEqual('V')
     })
+
+    it('6 should be convert to VI', () => {
+        expect(numberToRomanNumeral(6)).toEqual('VI')
+    })
     
 })
 
