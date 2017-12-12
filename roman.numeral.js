@@ -1,14 +1,13 @@
 'use strict'
 
 const numberToRomanNumeral = n => {
-    let result = ""
-    for (let numeral of numerals) {
+   return numerals.reduce(({result, n}, numeral) => {
         while(n >= numeral.value) {
           result += numeral.roman
           n -= numeral.value
         }
-    }
-    return result
+        return {result, n}
+    }, {result: "", n}).result
 }
 
 const numerals = [
