@@ -1,6 +1,9 @@
 'use strict'
 
-const numberToRomanNumeral = n => 'I'.repeat(n)
+const numberToRomanNumeral = n => {
+    if (n === 4) return 'IV'
+    return 'I'.repeat(n)
+}
 
 module.exports = numberToRomanNumeral
 
