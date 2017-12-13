@@ -42,6 +42,10 @@ describe('numberToRomanNumeral', () => {
     it('50 should be convert to L', () => {
         expect(numberToRomanNumeral(50)).toEqual('L')
     })
+
+    it('90 should be convert to XC', () => {
+        expect(numberToRomanNumeral(90)).toEqual('XC')
+    })
     
 })
 
