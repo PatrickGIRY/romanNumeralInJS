@@ -54,6 +54,10 @@ describe('numberToRomanNumeral', () => {
     it('400 should be convert to CD', () => {
         expect(numberToRomanNumeral(400)).toEqual('CD')
     })
+
+    it('500 should be convert to D', () => {
+        expect(numberToRomanNumeral(500)).toEqual('D')
+    })
     
 })
 
