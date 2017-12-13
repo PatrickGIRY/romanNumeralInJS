@@ -58,6 +58,14 @@ describe('numberToRomanNumeral', () => {
     it('500 should be convert to D', () => {
         expect(numberToRomanNumeral(500)).toEqual('D')
     })
+
+    it('900 should be convert to CM', () => {
+        expect(numberToRomanNumeral(900)).toEqual('CM')
+    })
+
+    it('1000 should be convert to M', () => {
+        expect(numberToRomanNumeral(1000)).toEqual('M')
+    })
     
 })
 
