@@ -12,6 +12,8 @@ const numberToRomanNumeral = n => {
 }
 
 const numerals = [
+    {value: 40, roman: 'XL'},
+    {value: 10, roman: 'X'},
     {value: 9, roman: 'IX'},
     {value: 5, roman: 'V'},
     {value: 4, roman: 'IV'},
