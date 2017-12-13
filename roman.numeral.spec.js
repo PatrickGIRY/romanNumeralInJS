@@ -67,5 +67,8 @@ describe('numberToRomanNumeral', () => {
         expect(numberToRomanNumeral(1000)).toEqual('M')
     })
     
+    it ('should convert 49 to XLIX', () => {
+        expect(numberToRomanNumeral(49)).toEqual('XLIX');
+    })
 })
 
