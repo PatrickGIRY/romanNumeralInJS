@@ -38,6 +38,10 @@ describe('numberToRomanNumeral', () => {
     it('40 should be convert to XL', () => {
         expect(numberToRomanNumeral(40)).toEqual('XL')
     })
+
+    it('50 should be convert to L', () => {
+        expect(numberToRomanNumeral(50)).toEqual('L')
+    })
     
 })
 
