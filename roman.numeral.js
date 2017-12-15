@@ -2,8 +2,9 @@
 
 const numberToRomanNumeral = n => {
    const nextState = ({result, n}, numeral) => {
-       if(n >= numeral.value) {
-          return nextState({result: result + numeral.roman, n: n - numeral.value}, numeral)
+       const {value, roman} = numeral
+       if(n >= value) {
+          return nextState({result: result + roman, n: n - value}, numeral)
        }
        return {result, n}
     }
